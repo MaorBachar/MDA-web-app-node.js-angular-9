@@ -1,0 +1,40 @@
+<div class="menu-container">
+    <mat-list>
+        <mat-list-item (click)="changeRoute('archive')">
+            <i class="material-icons md-dark">
+                storage
+            </i>
+            <span>ארכיון הודעות</span>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item (click)="sendCurrentMessageByWhatsApp()">
+            <i class="material-icons md-dark">
+                textsms
+            </i>
+            <span>שלח בווטסאפ</span>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item id="email-expansion-panel">
+            <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <i class="material-icons md-dark">
+                            email
+                        </i>
+                        <span>שלח באימייל</span>
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <email-component (closeMenu)="panelOpenState = false"></email-component>
+            </mat-expansion-panel>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>
+            <i class="material-icons md-dark">
+                lock
+            </i>
+            <span>פאנל ניהול</span>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+    </mat-list>
+
+</div>

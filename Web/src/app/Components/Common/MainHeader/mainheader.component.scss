@@ -1,0 +1,84 @@
+@import '../../../../styles.scss';
+mat-toolbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: $primaryColor;
+    color:white;
+    height: 40px;
+    
+    $buttonWidth: 30px;
+    $buttonHeight: 20px;
+    $buttonColor: white;
+    $lineThickness: 2px;
+    $transitionSpeed: .25s;
+    $transitionEasing: ease-in-out;
+    
+    // Demo
+    .menu-toggle {
+      position: relative;
+      display: block;
+      width: $buttonWidth;
+      height: $buttonHeight;
+      
+      background: transparent;
+      border-top: $lineThickness solid;
+      border-bottom: $lineThickness solid;
+      
+      color: $buttonColor;
+      font-size: 0;
+      
+      transition: all $transitionSpeed $transitionEasing;
+    
+      &:before,
+      &:after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: $lineThickness;
+        
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        
+        background: currentColor;
+        
+        transform: translate(-50%, -50%);
+        transition: transform $transitionSpeed $transitionEasing;
+      } 
+    }
+    
+    button:hover {
+      color: lighten($buttonColor, 15%);
+    }
+    
+    button.is-active {
+      border-color: transparent;
+    
+      &:before {
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
+    
+      &:after {
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }
+    }
+    button {
+      border: none;
+      cursor: pointer;
+      outline: none;
+      border-radius: 0;
+    }
+
+    .online-users-container {
+        display: flex;
+        align-items: center;
+        .online-users {
+          font-size: 16px;
+        }
+        img{
+            height:40px;
+        }
+
+    }
+
+}

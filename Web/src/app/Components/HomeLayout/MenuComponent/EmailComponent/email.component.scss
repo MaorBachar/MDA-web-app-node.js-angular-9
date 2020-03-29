@@ -1,0 +1,29 @@
+$primaryColor:#cc060e;
+
+.emails-list-container {
+    display: flex;
+    flex-direction: column;
+
+    mat-checkbox {
+        width: 100%;
+    }
+    button{
+        background-color: $primaryColor;
+        color:white;
+        text-align: center;
+    }
+}
+
+:host ::ng-deep label {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+
+
+    .mat-checkbox-inner-container {
+        margin: 0;
+        margin-left: 10px;
+    }
+}

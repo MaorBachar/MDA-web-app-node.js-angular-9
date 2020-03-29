@@ -1,0 +1,4 @@
+<div #emailsList class="emails-list-container">
+    <mat-checkbox *ngFor="let email of emailListDetails.dictionary" class="gmail">{{email.name}}</mat-checkbox>
+    <button (click)="submit()" mat-button>שלח במייל</button>
+</div>

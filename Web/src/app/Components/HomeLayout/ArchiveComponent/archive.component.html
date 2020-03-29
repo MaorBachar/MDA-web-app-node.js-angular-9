@@ -1,0 +1,11 @@
+<div class="test" #test>
+    <div class="message-container" [ngClass]="{'last-message': i===messages.length-1 ,'selected': message.selected}" *ngFor='let message of messages; let i = index;'
+        (click)="selectMessage(i)">
+        <span class="date">{{dateFormat(message.createdAt)}}</span>
+        <span class="message">{{message.sms_message}}</span>
+    </div>
+</div>
+
+<div class="button-container">
+    <button mat-raised-button color="primary" (click)="mergeMessages()">לחץ כאן לעריכה</button>
+</div>

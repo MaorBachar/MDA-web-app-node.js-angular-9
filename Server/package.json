@@ -1,0 +1,38 @@
+{
+  "name": "server",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "dependencies": {
+    "@types/socket.io": "^2.1.2",
+    "apn": "^2.1.5",
+    "async": "^2.5.0",
+    "atob": "^2.1.2",
+    "bcrypt": "^1.0.2",
+    "body-parser": "^1.17.2",
+    "config": "^1.26.1",
+    "cors": "^2.8.5",
+    "debug": "^2.6.8",
+    "dotenv": "^6.0.0",
+    "ejs": "^2.5.7",
+    "express": "^4.15.3",
+    "express-validator": "^3.2.0",
+    "firebase-admin": "^5.1.0",
+    "jsonwebtoken": "^8.3.0",
+    "mailgun-js": "^0.12.1",
+    "moment": "^2.18.1",
+    "mongoose": "^4.10.6",
+    "mongoose-deep-populate": "^3.0.0",
+    "mongoose-type-url": "^1.0.2",
+    "morgan": "^1.8.2",
+    "randomstring": "^1.1.5",
+    "socket.io": "^2.2.0",
+    "web-push": "^3.3.2"
+  }
+}

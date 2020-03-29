@@ -1,0 +1,16 @@
+<div class="textarea-container">
+    <textarea #textArea [(ngModel)]="dataService.currentMessage" (keyup)="updateText()"></textarea>
+</div>
+
+<div class="buttons-container">
+    <button mat-button (click)="actionButton_1()">*דוברות מד"א*</button>
+    <button mat-button (click)="actionButton_2()">*דובר מד"א, זכי הלר*</button>
+    <button mat-button (click)="actionButton_4()">חובשים ופראמ' מפנים לבי"ח</button>
+    <button mat-button (click)="actionButton_3()">חובשים..מעניקים במקום</button>
+    <button mat-button (click)="actionButton_5()">עדכון בהמשך</button>
+    <button mat-button (click)="actionButton_6()">מדיווח ראשוני</button>
+    <button mat-button (click)="actionButton_7()">העתק הכל</button>
+    <button mat-button (click)="actionButton_8()">נקה מכאן </button>
+    <button mat-button (click)="actionButton_9()">נקה הכל</button>
+    <button mat-button >הצג את כל הכפתורים</button>
+</div>

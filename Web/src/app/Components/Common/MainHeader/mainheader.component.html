@@ -1,0 +1,8 @@
+<mat-toolbar>
+        <button class="menu-toggle" (click)="toggleMenu()" [ngClass]="{'is-active': dataService.toggleMenu}">Menu</button>
+        <span class="online-users-container">
+                <span class="online-users">מחוברים כעת: {{numberOfOnlineUsers}}</span>
+                <img src="assets/images/online.svg">
+        </span>
+</mat-toolbar>
+

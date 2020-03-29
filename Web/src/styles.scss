@@ -1,0 +1,133 @@
+/* Master Styles */
+$primaryColor:#cc060e;
+
+@font-face {
+  font-family: 'assistant-v1-hebrew-regular';
+  src: url("/assets/fonts/assistant-v1-hebrew-regular.ttf");
+}
+
+* {
+  direction: rtl;
+  text-align: right;
+  font-family: assistant-v1-hebrew-regular, serif;
+}
+
+body {
+  overflow-x: hidden;
+
+}
+
+h1 {
+  color: #369;
+  font-size: 250%;
+}
+
+h2,
+h3 {
+  color: #444;
+  font-weight: lighter;
+}
+
+body {
+  margin: 0;
+}
+
+body,
+input[text],
+button {
+  color: #888;
+}
+
+a {
+  cursor: pointer;
+  cursor: hand;
+}
+
+button {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  cursor: hand;
+}
+
+
+
+button:disabled {
+  color: #aaa;
+  cursor: auto;
+}
+
+button:disabled,
+button[disabled] {
+  background-color: #f0f0f0
+}
+
+/* Navigation link styles */
+
+a:visited,
+a:link {
+  color: white;
+  text-decoration: none
+}
+
+nav a:hover {
+  color: #039be5;
+  background-color: #CFD8DC;
+}
+
+nav a.active {
+  color: #039be5;
+}
+
+/* everywhere else */
+
+* {
+  /*font-family: 'Secular One', sans-serif;*/
+  /* font-family: 'NarkisBlockMFBold' , sans-serif; */
+}
+
+*:focus {
+  outline: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.invalid {
+  width: 60%;
+  color: red;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+
+
+}
+
+.md-dark {
+  color: rgba(0, 0, 0, 0.3);
+}

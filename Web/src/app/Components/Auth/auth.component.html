@@ -1,0 +1,43 @@
+<div class="auth-container">
+    <span class="top-container">
+        <span class="title"> {{auth ? 'התחברות למערכת' : 'הרשמה למערכת' }} </span>
+    </span>
+    <form #submitForm="ngForm" (ngSubmit)="onSubmit(submitForm)">
+        <span class="input-field-custom" *ngIf="!auth">
+            <mat-form-field>
+                <input matInput required id="first_name" type="text" placeholder="שם פרטי" [(ngModel)]="user.name" name="name"
+                    #name="ngModel">
+            </mat-form-field>
+            <span [hidden]="name.valid || name.pristine" class="invalid">
+                נא להזין שם פרטי
+            </span>
+        </span>
+        <span class="input-field-custom">
+            <mat-form-field>
+                <input matInput required placeholder="אימייל" pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"
+                    [(ngModel)]="user.email" name="email" autocomplete="off" #email="ngModel">
+            </mat-form-field>
+            <span [hidden]="email.valid || email.pristine" class="invalid">
+                נא להזין אימייל
+            </span>
+        </span>
+        <span class="input-field-custom">
+            <mat-form-field>
+                <input matInput required id="password" placeholder="סיסמה" type="password" [(ngModel)]="user.password"
+                    name="password" #password="ngModel">
+            </mat-form-field>
+            <span [hidden]="password.valid || password.pristine" class="invalid">
+                נא להזין סיסמה
+            </span>
+        </span>
+
+        <button mat-raised-button color="primary" type="submit" [disabled]="submitForm.invalid">
+            {{auth ? 'התחבר' : 'שלח' }}
+        </button>
+        <div class="register-user" *ngIf="auth===1">
+            <span>עדיין לא רשום?</span><span (click)="routeRegister()"> לחץ כאן</span>
+        </div>
+        <span class="error-message input-field-custom" *ngIf="error">{{error}}</span>
+    </form>
+
+</div>

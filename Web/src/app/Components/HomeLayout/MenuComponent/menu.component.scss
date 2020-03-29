@@ -1,0 +1,36 @@
+@import '../../../../styles.scss';
+
+:host {
+    margin: 0;
+    padding: 0;
+}
+
+mat-list-item {
+    display: flex;
+    align-items: center;
+
+    i {
+        margin-left: 10px;
+    }
+    span{
+        font-size: 22px;
+        color: black;
+        font-weight: bold;
+    }
+    mat-expansion-panel {
+        height: 100%;
+        width: 100%;
+        box-shadow: none;
+
+        .mat-expansion-panel-header {
+            padding: 0;
+        }
+    }
+}
+
+#email-expansion-panel{
+    height: 100%;
+}
+.mat-expansion-panel-header-title{
+    margin-right: 0;
+}

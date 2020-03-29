@@ -1,0 +1,30 @@
+{
+    "MongoDB" :
+    {
+        "Configurations" :
+        {
+            "host" : "localhost",
+            "user" : "",
+            "password" : "",
+            "port" : "27017",
+            "database" : "DB_MDA"
+        },
+        "currentVersion" : 1
+    },
+
+    "Security" :
+    {
+        "Request" :
+        {
+            "Header" :
+            {
+                "key" : "App-Auth",
+                "value" : "$$$"
+            }
+        },
+        "ForgotPassword":
+        {
+            "hoursExpiry": 24
+        }
+    }
+}
