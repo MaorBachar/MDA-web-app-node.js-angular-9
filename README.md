@@ -1,5 +1,4 @@
-# MDA-web-app-Angular-9
-# Web Application for Magen David Adom Spokesman Department (Vanilla version)
+# Web Application for Magen David Adom Spokesman Department (Angular 9 & Nodejs)
 
 Developing web application for Magen David Adom - Spokesman Department,
 that need to publish an accurate report, as fast as possible to the press.<br>
@@ -10,10 +9,9 @@ once message received by MDA Call Center, it will appear automatically  inside t
 This web app enables the end user to get real time reports from the Israeli national emergency services, By offering to edit & use pre-made text pattern and title that fits with the relevant content entered by the user, all by fast and easy UI.
 The messages can then be forwarded to the leading newsgroups, by WhatsApp and / or by mail.
 <p align="center">
-  <img width="260" src="images/preview.jpg">
+  <img width="260" src="https://github.com/MaorBachar/MDA-web-app-node.js-angular-9/blob/master/Web/src/assets/images/1.jpeg">
+    <img width="260" src="https://github.com/MaorBachar/MDA-web-app-node.js-angular-9/blob/master/Web/src/assets/images/2.jpeg">
 </p>
-This is only static version, Full version running on Nodejs express server.
-  <br><a href="https://goo.gl/6DUw8o">link for static-Demo version this system build especially for mobile users</a>
 
 
 ## Panel Editor:
