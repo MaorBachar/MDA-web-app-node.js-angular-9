@@ -30,7 +30,7 @@
     "mongoose": "^4.10.6",
     "mongoose-deep-populate": "^3.0.0",
     "mongoose-type-url": "^1.0.2",
-    "morgan": "^1.8.2",
+    "morgan": "^1.9.1",
     "randomstring": "^1.1.5",
     "socket.io": "^2.2.0",
     "web-push": "^3.3.2"
